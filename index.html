@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Rock, Paper, Scissors</title>
+    <style>
+        .attribution {
+          font-size: 11px;
+          text-align: center;
+        }
+    
+        .attribution a {
+          color: hsl(228, 70%, 66%);
+        }
+      </style>
+</head>
+
+<body>
+    <div class="black" id="blackBag"></div>
+    <header>
+        <div class="head flex">
+            <img src="assets/svg/ROCKPAPERSCISSORS.svg">
+            <div class="score">
+                <h1 class="textScore">SCORE</h1>
+                <p class="numberScores" id="score">0</p>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <div class="textBox flex" id="textBox">
+            <h2>YOU PICKED</h2>
+            <h2>THE HOUSE PICKED</h2>
+        </div>
+        <div class="flex" id="main">
+            <div class="playground flex" id="ground">
+                <div class="paper btn" id="paper">
+                    <img src="./assets/svg/paper.svg" alt="paper">
+                </div>
+                <div class="scissors btn" id="scissors">
+                    <img src="./assets/svg/scissors.svg" alt="scissors">
+                </div>
+                <div class="rock btn" id="rock">
+                    <img src="./assets/svg/rock.svg" alt="rock">
+                </div>
+            </div>
+            <div class="AI" id="ai">
+                <div class="paper ai" id="paperai">
+                    <button class="btn">
+                        <img src="./assets/svg/paper.svg" alt="paper">
+                    </button>
+                </div>
+                <div class="scissors ai" id="scissorsai">
+                    <button class="btn">
+                        <img src="./assets/svg/scissors.svg" alt="scissors">
+                    </button>
+                </div>
+                <div class="rock ai" id="rockai">
+                    <button class="btn">
+                        <img src="./assets/svg/rock.svg" alt="rock">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="rulesContainer" id="ruleBox">
+            <div class="rulesHeader flex">
+                <h2>RULES</h2>
+                <button id="close"><img src="./assets/svg/Combined Shape.svg" alt="close"></button>
+            </div>
+            <div class="rulesBody">
+                <img src="./assets/images/Group-phone.png" alt="rules">
+            </div>
+        </div>
+        <button class="rules" id="rules">RULES</button>
+        <div class="winBox" id="win">
+            <h2 id="winTitle">You</h2>
+            <button id="reBTN">PLAY AGAIN</button>
+        </div>
+
+    </main>
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/NinoNineo">Nino Papashvili</a>.
+      </div>
+    <script src="js/script.js"></script>
+    <script src="js/play.js"></script>
+</body>
+
+</html>
